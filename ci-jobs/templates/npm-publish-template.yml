@@ -1,9 +1,7 @@
 jobs:
 - job: Bundle
   pool:
-    vmImage: 'macOS-10.15' # Make this a parameter
-  variables:
-  - name: version
+    vmImage: 'macOS-10.15' # TODO: Make this a parameter
   steps:
   - script: echo "Publishing ${{ variables.version }}"
     displayName: Set Version

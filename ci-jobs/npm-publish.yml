@@ -1,3 +1,5 @@
 # Pull request validation job
 jobs:
+  variables:
+  - name: version
   - template: ./templates/npm-publish-template.yml

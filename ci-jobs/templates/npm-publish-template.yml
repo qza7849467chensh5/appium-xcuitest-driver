@@ -1,0 +1,15 @@
+variables:
+- name: version
+jobs:
+- job: Bundle
+  steps:
+  - script: echo "Publishing ${{ variables.version }}"
+    displayName: Set Version
+  - script: npm install
+    displayName: NPM Install
+  - script: npm shrinkwrap
+    displayName: NPM Shrinkwrap
+  - script: echo "PLACEHOLDER"
+    displayName: Smoke Tests
+  - script: echo "PLACEHOLDER"
+    displayName: Git Tag

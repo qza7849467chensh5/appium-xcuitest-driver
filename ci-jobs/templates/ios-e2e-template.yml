@@ -43,7 +43,7 @@ jobs:
       condition: eq('${{ parameters.launchWithIDB }}', true)
     - task: NodeTool@0
       inputs:
-        versionSpec: 12.x
+        versionSpec: 14.x
     - script: npm install
       displayName: Install node dependencies
     - script: export PATH="${PATH}:$(/usr/local/bin/python3.7 -c 'import site; print(site.USER_BASE)')/bin" && ${{ parameters.script }}

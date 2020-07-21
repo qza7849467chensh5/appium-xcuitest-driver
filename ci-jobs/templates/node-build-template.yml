@@ -1,5 +1,5 @@
 parameters:
-  nodeVersion: 12.x
+  nodeVersion: 14.x
   name: UnitTests
 jobs:
   # Run unit tests on different Node versions

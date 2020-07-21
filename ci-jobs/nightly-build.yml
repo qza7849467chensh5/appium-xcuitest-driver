@@ -4,11 +4,11 @@ jobs:
   # Run node tests on past node versions
   - template: ./templates/node-build-template.yml
     parameters:
-      nodeVersion: 12.x
+      nodeVersion: 14.x
       name: Node12_Tests
   - template: ./templates/node-build-template.yml
     parameters:
-      nodeVersion: 10.x
+      nodeVersion: 12.x
       name: Node10_Tests
 
   # Run the E2E tests on local simulators across different ios and xcode versions

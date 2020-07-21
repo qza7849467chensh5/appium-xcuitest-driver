@@ -1,7 +1,7 @@
-variables:
-- name: version
 jobs:
 - job: Bundle
+  variables:
+  - name: version
   steps:
   - script: echo "Publishing ${{ variables.version }}"
     displayName: Set Version
